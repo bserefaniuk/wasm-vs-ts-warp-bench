@@ -1,0 +1,25 @@
+{
+  "name": "wasm-vs-ts-warp-bench",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Reproducible benchmark: Rust/WASM 3D perspective image warp engine vs naive and hand-optimized TypeScript, plus output parity. Companion repo for the article \"WASM didn't make my Figma plugin faster. It made it possible.\"",
+  "author": "Bohdan Serefaniuk (https://www.bserefaniuk.es)",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "bench": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bserefaniuk/wasm-vs-ts-warp-bench"
+  }
+}

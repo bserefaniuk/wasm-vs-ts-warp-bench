@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "engine": "native-draft",
+      "iterations": 7,
+      "maxMs": 6.283708,
+      "meanMs": 4.405958428571429,
+      "medianMs": 3.952792,
+      "minMs": 3.425042,
+      "outH": 512,
+      "outW": 512,
+      "size": 512
+    },
+    {
+      "engine": "native-ultra",
+      "iterations": 7,
+      "maxMs": 10.037458,
+      "meanMs": 9.658434428571427,
+      "medianMs": 9.615166,
+      "minMs": 9.381041999999999,
+      "outH": 512,
+      "outW": 512,
+      "size": 512
+    },
+    {
+      "engine": "native-draft",
+      "iterations": 7,
+      "maxMs": 8.969875,
+      "meanMs": 8.656345142857143,
+      "medianMs": 8.585625,
+      "minMs": 8.543040999999999,
+      "outH": 1024,
+      "outW": 1024,
+      "size": 1024
+    },
+    {
+      "engine": "native-ultra",
+      "iterations": 7,
+      "maxMs": 34.80975,
+      "meanMs": 32.41274414285714,
+      "medianMs": 32.286625,
+      "minMs": 31.493374999999997,
+      "outH": 1024,
+      "outW": 1024,
+      "size": 1024
+    },
+    {
+      "engine": "native-draft",
+      "iterations": 7,
+      "maxMs": 34.041375,
+      "meanMs": 33.71387514285715,
+      "medianMs": 33.715959,
+      "minMs": 33.312583,
+      "outH": 2048,
+      "outW": 2048,
+      "size": 2048
+    },
+    {
+      "engine": "native-ultra",
+      "iterations": 7,
+      "maxMs": 123.604,
+      "meanMs": 119.72683914285714,
+      "medianMs": 119.527833,
+      "minMs": 117.079958,
+      "outH": 2048,
+      "outW": 2048,
+      "size": 2048
+    },
+    {
+      "engine": "native-draft",
+      "iterations": 7,
+      "maxMs": 131.412042,
+      "meanMs": 130.22452985714287,
+      "medianMs": 130.346459,
+      "minMs": 128.71612499999998,
+      "outH": 4096,
+      "outW": 4096,
+      "size": 4096
+    },
+    {
+      "engine": "native-ultra",
+      "iterations": 7,
+      "maxMs": 452.318042,
+      "meanMs": 447.25376199999994,
+      "medianMs": 448.375792,
+      "minMs": 442.275,
+      "outH": 4096,
+      "outW": 4096,
+      "size": 4096
+    }
+  ],
+  "host": "aarch64 / Apple M4 Max",
+  "notes": [
+    "host build, default target-cpu; wasm runs simd128 under V8 \u2014 indicative comparison only",
+    "hand-rolled harness (std::time::Instant), 2 untimed warmups then 7 timed iterations per case, cargo run --release --example bench, default target-cpu, opt-level 3 + LTO per the crate profile"
+  ],
+  "rustc": "rustc 1.94.0 (4a4ef493e 2026-03-02)",
+  "timestamp": "2026-06-10T10:13:32Z"
+}

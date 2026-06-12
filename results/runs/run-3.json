@@ -1,0 +1,436 @@
+{
+  "timestamp": "2026-06-10T22:35:11.575Z",
+  "machine": {
+    "cpuModel": "Apple M4 Max",
+    "cores": 14,
+    "node": "v24.14.0",
+    "platform": "darwin"
+  },
+  "wasm": {
+    "initMs": 0.7297,
+    "sizeBytes": 572837
+  },
+  "cases": [
+    {
+      "group": "A",
+      "engine": "ts-naive",
+      "size": 512,
+      "maxSide": 512,
+      "quality": null,
+      "iterations": 10,
+      "medianMs": 9.5103,
+      "minMs": 9.3456,
+      "maxMs": 17.0503,
+      "meanMs": 11.3903,
+      "outW": 512,
+      "outH": 512
+    },
+    {
+      "group": "A",
+      "engine": "ts-optimized",
+      "size": 512,
+      "maxSide": 512,
+      "quality": null,
+      "iterations": 10,
+      "medianMs": 3.2534,
+      "minMs": 2.5913,
+      "maxMs": 4.418,
+      "meanMs": 3.1955,
+      "outW": 512,
+      "outH": 512
+    },
+    {
+      "group": "A",
+      "engine": "wasm-draft",
+      "size": 512,
+      "maxSide": 512,
+      "quality": "draft",
+      "iterations": 10,
+      "medianMs": 3.2624,
+      "minMs": 3.2224,
+      "maxMs": 3.4061,
+      "meanMs": 3.2728,
+      "outW": 512,
+      "outH": 512
+    },
+    {
+      "group": "A",
+      "engine": "ts-naive",
+      "size": 1024,
+      "maxSide": 1024,
+      "quality": null,
+      "iterations": 10,
+      "medianMs": 53.2744,
+      "minMs": 52.7413,
+      "maxMs": 54.6854,
+      "meanMs": 53.4447,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "A",
+      "engine": "ts-optimized",
+      "size": 1024,
+      "maxSide": 1024,
+      "quality": null,
+      "iterations": 10,
+      "medianMs": 13.3779,
+      "minMs": 13.2473,
+      "maxMs": 15.4682,
+      "meanMs": 13.6735,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "A",
+      "engine": "wasm-draft",
+      "size": 1024,
+      "maxSide": 1024,
+      "quality": "draft",
+      "iterations": 10,
+      "medianMs": 13.0196,
+      "minMs": 12.838,
+      "maxMs": 13.1541,
+      "meanMs": 13.0206,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "A",
+      "engine": "ts-naive",
+      "size": 2048,
+      "maxSide": 2048,
+      "quality": null,
+      "iterations": 5,
+      "medianMs": 180.0585,
+      "minMs": 179.1616,
+      "maxMs": 180.6603,
+      "meanMs": 180.0901,
+      "outW": 2048,
+      "outH": 2048
+    },
+    {
+      "group": "A",
+      "engine": "ts-optimized",
+      "size": 2048,
+      "maxSide": 2048,
+      "quality": null,
+      "iterations": 5,
+      "medianMs": 53.1599,
+      "minMs": 53.0175,
+      "maxMs": 61.0578,
+      "meanMs": 56.1951,
+      "outW": 2048,
+      "outH": 2048
+    },
+    {
+      "group": "A",
+      "engine": "wasm-draft",
+      "size": 2048,
+      "maxSide": 2048,
+      "quality": "draft",
+      "iterations": 5,
+      "medianMs": 51.2593,
+      "minMs": 51.1013,
+      "maxMs": 51.9127,
+      "meanMs": 51.3347,
+      "outW": 2048,
+      "outH": 2048
+    },
+    {
+      "group": "A",
+      "engine": "ts-naive",
+      "size": 4096,
+      "maxSide": 4096,
+      "quality": null,
+      "iterations": 5,
+      "medianMs": 715.547,
+      "minMs": 707.1736,
+      "maxMs": 717.8547,
+      "meanMs": 714.5297,
+      "outW": 4096,
+      "outH": 4096
+    },
+    {
+      "group": "A",
+      "engine": "ts-optimized",
+      "size": 4096,
+      "maxSide": 4096,
+      "quality": null,
+      "iterations": 5,
+      "medianMs": 229.8697,
+      "minMs": 215.9818,
+      "maxMs": 276.463,
+      "meanMs": 237.8351,
+      "outW": 4096,
+      "outH": 4096
+    },
+    {
+      "group": "A",
+      "engine": "wasm-draft",
+      "size": 4096,
+      "maxSide": 4096,
+      "quality": "draft",
+      "iterations": 5,
+      "medianMs": 196.2576,
+      "minMs": 195.1402,
+      "maxMs": 198.1719,
+      "meanMs": 196.4592,
+      "outW": 4096,
+      "outH": 4096
+    },
+    {
+      "group": "B",
+      "engine": "ts-naive",
+      "size": 2048,
+      "maxSide": 1024,
+      "quality": null,
+      "iterations": 10,
+      "medianMs": 53.4268,
+      "minMs": 50.0638,
+      "maxMs": 56.8884,
+      "meanMs": 53.456,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "ts-optimized",
+      "size": 2048,
+      "maxSide": 1024,
+      "quality": null,
+      "iterations": 10,
+      "medianMs": 11.5163,
+      "minMs": 11.2326,
+      "maxMs": 12.4526,
+      "meanMs": 11.6282,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "wasm-draft",
+      "size": 2048,
+      "maxSide": 1024,
+      "quality": "draft",
+      "iterations": 10,
+      "medianMs": 12.9073,
+      "minMs": 12.6351,
+      "maxMs": 13.3259,
+      "meanMs": 12.9055,
+      "coldMs": 64.4122,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "wasm-ultra",
+      "size": 2048,
+      "maxSide": 1024,
+      "quality": "ultra",
+      "iterations": 10,
+      "medianMs": 44.2387,
+      "minMs": 43.7417,
+      "maxMs": 45.0998,
+      "meanMs": 44.2408,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "ts-naive",
+      "size": 4096,
+      "maxSide": 1024,
+      "quality": null,
+      "iterations": 10,
+      "medianMs": 61.9852,
+      "minMs": 60.1583,
+      "maxMs": 64.8166,
+      "meanMs": 62.0146,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "ts-optimized",
+      "size": 4096,
+      "maxSide": 1024,
+      "quality": null,
+      "iterations": 10,
+      "medianMs": 17.0994,
+      "minMs": 15.7139,
+      "maxMs": 18.3281,
+      "meanMs": 16.8234,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "wasm-draft",
+      "size": 4096,
+      "maxSide": 1024,
+      "quality": "draft",
+      "iterations": 10,
+      "medianMs": 12.7272,
+      "minMs": 12.3838,
+      "maxMs": 13.0922,
+      "meanMs": 12.7509,
+      "coldMs": 197.252,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "wasm-ultra",
+      "size": 4096,
+      "maxSide": 1024,
+      "quality": "ultra",
+      "iterations": 10,
+      "medianMs": 43.803,
+      "minMs": 43.3937,
+      "maxMs": 44.4701,
+      "meanMs": 43.8478,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "C",
+      "engine": "wasm-final-png",
+      "size": 1024,
+      "maxSide": 0,
+      "quality": "ultra",
+      "iterations": 5,
+      "medianMs": 47.6541,
+      "minMs": 47.1463,
+      "maxMs": 47.7367,
+      "meanMs": 47.5686,
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "C",
+      "engine": "wasm-final-png",
+      "size": 2048,
+      "maxSide": 0,
+      "quality": "ultra",
+      "iterations": 5,
+      "medianMs": 178.5714,
+      "minMs": 176.0043,
+      "maxMs": 180.0784,
+      "meanMs": 178.2274,
+      "outW": 2048,
+      "outH": 2048
+    },
+    {
+      "group": "C",
+      "engine": "wasm-final-png",
+      "size": 4096,
+      "maxSide": 0,
+      "quality": "ultra",
+      "iterations": 5,
+      "medianMs": 671.2782,
+      "minMs": 669.4149,
+      "maxMs": 676.8201,
+      "meanMs": 671.976,
+      "outW": 4096,
+      "outH": 4096
+    },
+    {
+      "group": "D",
+      "engine": "wasm-identity",
+      "size": 2048,
+      "maxSide": 0,
+      "quality": null,
+      "iterations": 20,
+      "medianMs": 0.002,
+      "minMs": 0.0019,
+      "maxMs": 0.0044,
+      "meanMs": 0.0022,
+      "outW": 2048,
+      "outH": 2048
+    }
+  ],
+  "parity": {
+    "maxChannelDiff": 0,
+    "wasmVsTsOptimized": {
+      "params": {
+        "yawDeg": 25,
+        "pitchDeg": -15,
+        "rollDeg": 3,
+        "fovDeg": 50,
+        "distance": 1.5,
+        "fitMode": "contain"
+      },
+      "quality": "draft",
+      "cases": [
+        {
+          "size": 256,
+          "raw": {
+            "maxAbsDiff": 255,
+            "meanAbsDiff": 1.6988,
+            "pctOver2": 3.915
+          },
+          "adjusted": {
+            "sampleOffsetPlus05": {
+              "maxAbsDiff": 255,
+              "meanAbsDiff": 2.576,
+              "pctOver2": 4.8626
+            },
+            "sampleOffsetMinus05": {
+              "maxAbsDiff": 255,
+              "meanAbsDiff": 3.4079,
+              "pctOver2": 5.0858
+            },
+            "engineConvention": {
+              "maxAbsDiff": 252,
+              "meanAbsDiff": 0.789,
+              "pctOver2": 0.8896
+            },
+            "engineConventionResidual": {
+              "pixelsOver8": 756,
+              "pctOnPartialAlphaEdge": 100
+            }
+          }
+        },
+        {
+          "size": 512,
+          "raw": {
+            "maxAbsDiff": 255,
+            "meanAbsDiff": 1.0941,
+            "pctOver2": 3.4561
+          },
+          "adjusted": {
+            "sampleOffsetPlus05": {
+              "maxAbsDiff": 250,
+              "meanAbsDiff": 2.0025,
+              "pctOver2": 4.3824
+            },
+            "sampleOffsetMinus05": {
+              "maxAbsDiff": 255,
+              "meanAbsDiff": 2.7483,
+              "pctOver2": 4.6947
+            },
+            "engineConvention": {
+              "maxAbsDiff": 254,
+              "meanAbsDiff": 0.3905,
+              "pctOver2": 0.4429
+            },
+            "engineConventionResidual": {
+              "pixelsOver8": 1503,
+              "pctOnPartialAlphaEdge": 100
+            }
+          }
+        }
+      ],
+      "note": "Raw diff compares tsOptimizedRender output to wasm render_preview draft (8-byte header stripped) on the standard warp params. The two engines use different pixel-center conventions: wasm maps destination pixel centers (x+0.5, y+0.5) through the inverse homography and subtracts 0.5 from the sampled source position (render/tile.rs), while the TS engines map raw integer coordinates with no offsets. When raw max diff exceeds 8, \"adjusted\" re-runs the TS warp with sample offsets +/-0.5 and with the exact engine convention (dst +0.5, sample -0.5) to separate convention shift from genuine numeric divergence. engineConventionResidual then localizes the surviving >8 diffs: they sit on partial-alpha quad-edge pixels, where wasm interpolates premultiplied alpha and resolves while the TS engines interpolate straight alpha."
+    }
+  },
+  "notes": [
+    "Group A times the identical algorithm class in all three engines: bilinear inverse warp at full source resolution (wasm-draft via render_preview with maxSide = source side; no preview base, no supersampling).",
+    "Group B TS engines warp the full-res source down to a 1024 frame every call; wasm warm frames warp a cached prefiltered 1024 preview base (production interactive path). coldMs on wasm-draft is the first call that builds that base with an ultra-quality downscale.",
+    "Group C has no TS counterpart: the naive TS renderer cannot do Jacobian-driven adaptive supersampling or PNG encoding; render_final does strictly more work (ultra bicubic + SSAA + premultiplied alpha + PNG encode).",
+    "Group D: production skips render AND encode entirely on identity and reuses the original encoded bytes bit-exact; the timed call is only the identity detection itself. outW/outH are the untouched source dims.",
+    "Iterations actually used: Group A 10 (512/1024) and 5 (2048/4096); Group B 10; Group C 5; Group D 20. Warmup 2 untimed iterations per case.",
+    "Source RGBA buffers are reused across iterations (renderers do not mutate input); timings include JS<->WASM boundary copies, as production pays them too."
+  ]
+}

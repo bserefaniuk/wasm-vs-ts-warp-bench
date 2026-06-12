@@ -1,0 +1,964 @@
+{
+  "generatedAt": "2026-06-10T22:37:31.982Z",
+  "methodology": "7 full runs, median of run-medians, spread = min..max of run medians. Each run: full bench.test.ts (groups A,B,C,D,P), 2 untimed warmups per case, per-case iteration counts in iterationsPerRun. Runs executed sequentially with ~10 s pauses, no other heavy load. Group A ratios are run-paired: per-run ratio = that run's tsX median / that run's wasm median; spread = min..max of per-run ratios.",
+  "machine": {
+    "cpuModel": "Apple M4 Max",
+    "cores": 14,
+    "node": "v24.14.0",
+    "platform": "darwin"
+  },
+  "runTimestamps": [
+    "2026-06-10T22:34:08.518Z",
+    "2026-06-10T22:34:39.948Z",
+    "2026-06-10T22:35:11.575Z",
+    "2026-06-10T22:35:42.946Z",
+    "2026-06-10T22:36:14.322Z",
+    "2026-06-10T22:36:45.958Z",
+    "2026-06-10T22:37:17.598Z"
+  ],
+  "runFiles": [
+    "runs/run-1.json",
+    "runs/run-2.json",
+    "runs/run-3.json",
+    "runs/run-4.json",
+    "runs/run-5.json",
+    "runs/run-6.json",
+    "runs/run-7.json"
+  ],
+  "wasm": {
+    "sizeBytes": 572837,
+    "initMedianMs": 0.7657,
+    "initSpreadMinMs": 0.7297,
+    "initSpreadMaxMs": 1.0996,
+    "initRunMs": [
+      0.7738,
+      0.7387,
+      0.7297,
+      1.0512,
+      0.7657,
+      0.7305,
+      1.0996
+    ]
+  },
+  "cases": [
+    {
+      "group": "A",
+      "engine": "ts-naive",
+      "size": 512,
+      "maxSide": 512,
+      "quality": null,
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 9.5213,
+      "spreadMinMs": 9.3965,
+      "spreadMaxMs": 10.439,
+      "runMediansMs": [
+        9.5213,
+        9.522,
+        9.5103,
+        9.3965,
+        10.439,
+        9.6538,
+        9.505
+      ],
+      "outW": 512,
+      "outH": 512
+    },
+    {
+      "group": "A",
+      "engine": "ts-optimized",
+      "size": 512,
+      "maxSide": 512,
+      "quality": null,
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 2.9387,
+      "spreadMinMs": 2.6461,
+      "spreadMaxMs": 3.5922,
+      "runMediansMs": [
+        3.3529,
+        2.8121,
+        3.2534,
+        2.9341,
+        3.5922,
+        2.9387,
+        2.6461
+      ],
+      "outW": 512,
+      "outH": 512
+    },
+    {
+      "group": "A",
+      "engine": "wasm-draft",
+      "size": 512,
+      "maxSide": 512,
+      "quality": "draft",
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 3.2588,
+      "spreadMinMs": 3.2057,
+      "spreadMaxMs": 3.2935,
+      "runMediansMs": [
+        3.2057,
+        3.2461,
+        3.2624,
+        3.2372,
+        3.2886,
+        3.2588,
+        3.2935
+      ],
+      "outW": 512,
+      "outH": 512
+    },
+    {
+      "group": "A",
+      "engine": "ts-naive",
+      "size": 1024,
+      "maxSide": 1024,
+      "quality": null,
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 53.2701,
+      "spreadMinMs": 52.7722,
+      "spreadMaxMs": 54.4714,
+      "runMediansMs": [
+        52.8578,
+        53.451,
+        53.2744,
+        52.7722,
+        53.2701,
+        52.9819,
+        54.4714
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "A",
+      "engine": "ts-optimized",
+      "size": 1024,
+      "maxSide": 1024,
+      "quality": null,
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 13.3798,
+      "spreadMinMs": 11.6427,
+      "spreadMaxMs": 15.6884,
+      "runMediansMs": [
+        15.6884,
+        13.3798,
+        13.3779,
+        11.6427,
+        12.5823,
+        13.5623,
+        15.1737
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "A",
+      "engine": "wasm-draft",
+      "size": 1024,
+      "maxSide": 1024,
+      "quality": "draft",
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 12.9272,
+      "spreadMinMs": 12.8495,
+      "spreadMaxMs": 13.0403,
+      "runMediansMs": [
+        12.8495,
+        12.8975,
+        13.0196,
+        12.9272,
+        13.0403,
+        12.9483,
+        12.8829
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "A",
+      "engine": "ts-naive",
+      "size": 2048,
+      "maxSide": 2048,
+      "quality": null,
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 180.319,
+      "spreadMinMs": 180.0585,
+      "spreadMaxMs": 183.3717,
+      "runMediansMs": [
+        180.0628,
+        183.3717,
+        180.0585,
+        181.2896,
+        180.319,
+        181.4224,
+        180.256
+      ],
+      "outW": 2048,
+      "outH": 2048
+    },
+    {
+      "group": "A",
+      "engine": "ts-optimized",
+      "size": 2048,
+      "maxSide": 2048,
+      "quality": null,
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 53.1599,
+      "spreadMinMs": 46.1366,
+      "spreadMaxMs": 58.3596,
+      "runMediansMs": [
+        54.1628,
+        48.8849,
+        53.1599,
+        46.1366,
+        48.4823,
+        56.4597,
+        58.3596
+      ],
+      "outW": 2048,
+      "outH": 2048
+    },
+    {
+      "group": "A",
+      "engine": "wasm-draft",
+      "size": 2048,
+      "maxSide": 2048,
+      "quality": "draft",
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 51.0104,
+      "spreadMinMs": 50.7459,
+      "spreadMaxMs": 51.2593,
+      "runMediansMs": [
+        51.0104,
+        50.856,
+        51.2593,
+        51.1088,
+        51.2301,
+        50.7459,
+        50.7971
+      ],
+      "outW": 2048,
+      "outH": 2048
+    },
+    {
+      "group": "A",
+      "engine": "ts-naive",
+      "size": 4096,
+      "maxSide": 4096,
+      "quality": null,
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 720.9775,
+      "spreadMinMs": 715.547,
+      "spreadMaxMs": 730.8782,
+      "runMediansMs": [
+        720.2093,
+        730.8782,
+        715.547,
+        722.8485,
+        716.0157,
+        724.8714,
+        720.9775
+      ],
+      "outW": 4096,
+      "outH": 4096
+    },
+    {
+      "group": "A",
+      "engine": "ts-optimized",
+      "size": 4096,
+      "maxSide": 4096,
+      "quality": null,
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 199.6328,
+      "spreadMinMs": 178.881,
+      "spreadMaxMs": 229.8697,
+      "runMediansMs": [
+        186.3962,
+        179.3213,
+        229.8697,
+        199.6328,
+        178.881,
+        218.7484,
+        223.3873
+      ],
+      "outW": 4096,
+      "outH": 4096
+    },
+    {
+      "group": "A",
+      "engine": "wasm-draft",
+      "size": 4096,
+      "maxSide": 4096,
+      "quality": "draft",
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 196.5938,
+      "spreadMinMs": 196.1896,
+      "spreadMaxMs": 198.6183,
+      "runMediansMs": [
+        196.5938,
+        198.6183,
+        196.2576,
+        196.811,
+        196.1896,
+        196.4548,
+        198.36
+      ],
+      "outW": 4096,
+      "outH": 4096
+    },
+    {
+      "group": "B",
+      "engine": "ts-naive",
+      "size": 2048,
+      "maxSide": 1024,
+      "quality": null,
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 51.691,
+      "spreadMinMs": 49.9598,
+      "spreadMaxMs": 54.607,
+      "runMediansMs": [
+        52.4007,
+        51.691,
+        53.4268,
+        50.5989,
+        50.7092,
+        54.607,
+        49.9598
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "ts-optimized",
+      "size": 2048,
+      "maxSide": 1024,
+      "quality": null,
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 14.0674,
+      "spreadMinMs": 11.5163,
+      "spreadMaxMs": 15.061,
+      "runMediansMs": [
+        14.3564,
+        12.8887,
+        11.5163,
+        15.061,
+        14.4567,
+        14.0674,
+        11.6063
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "wasm-draft",
+      "size": 2048,
+      "maxSide": 1024,
+      "quality": "draft",
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 12.9073,
+      "spreadMinMs": 12.7912,
+      "spreadMaxMs": 13.101,
+      "runMediansMs": [
+        12.9101,
+        12.9175,
+        12.9073,
+        12.8832,
+        13.101,
+        12.7912,
+        12.8332
+      ],
+      "outW": 1024,
+      "outH": 1024,
+      "coldMedianMs": 64.1532,
+      "coldSpreadMinMs": 63.6782,
+      "coldSpreadMaxMs": 64.4626,
+      "coldRunMs": [
+        64.4626,
+        63.8572,
+        64.4122,
+        64.1532,
+        64.283,
+        63.8825,
+        63.6782
+      ]
+    },
+    {
+      "group": "B",
+      "engine": "wasm-ultra",
+      "size": 2048,
+      "maxSide": 1024,
+      "quality": "ultra",
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 44.1872,
+      "spreadMinMs": 43.7855,
+      "spreadMaxMs": 44.479,
+      "runMediansMs": [
+        44.2054,
+        44.479,
+        44.2387,
+        44.0789,
+        44.1872,
+        43.7855,
+        44.0842
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "ts-naive",
+      "size": 4096,
+      "maxSide": 1024,
+      "quality": null,
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 61.5533,
+      "spreadMinMs": 59.1011,
+      "spreadMaxMs": 62.3635,
+      "runMediansMs": [
+        62.3635,
+        61.5533,
+        61.9852,
+        60.2007,
+        59.1011,
+        62.1676,
+        59.3053
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "ts-optimized",
+      "size": 4096,
+      "maxSide": 1024,
+      "quality": null,
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 21.8748,
+      "spreadMinMs": 17.0994,
+      "spreadMaxMs": 24.7346,
+      "runMediansMs": [
+        24.7346,
+        17.3827,
+        17.0994,
+        22.9968,
+        21.8748,
+        22.5588,
+        17.1783
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "B",
+      "engine": "wasm-draft",
+      "size": 4096,
+      "maxSide": 1024,
+      "quality": "draft",
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 12.8434,
+      "spreadMinMs": 12.7272,
+      "spreadMaxMs": 13.0064,
+      "runMediansMs": [
+        13.0064,
+        12.8434,
+        12.7272,
+        12.8438,
+        12.8594,
+        12.7428,
+        12.745
+      ],
+      "outW": 1024,
+      "outH": 1024,
+      "coldMedianMs": 194.396,
+      "coldSpreadMinMs": 193.9444,
+      "coldSpreadMaxMs": 197.252,
+      "coldRunMs": [
+        193.9444,
+        195.8876,
+        197.252,
+        194.396,
+        194.0379,
+        195.1543,
+        194.2527
+      ]
+    },
+    {
+      "group": "B",
+      "engine": "wasm-ultra",
+      "size": 4096,
+      "maxSide": 1024,
+      "quality": "ultra",
+      "iterationsPerRun": 10,
+      "runs": 7,
+      "medianMs": 43.8646,
+      "spreadMinMs": 43.4375,
+      "spreadMaxMs": 44.945,
+      "runMediansMs": [
+        43.9292,
+        43.9865,
+        43.803,
+        43.6915,
+        43.8646,
+        43.4375,
+        44.945
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "C",
+      "engine": "wasm-final-png",
+      "size": 1024,
+      "maxSide": 0,
+      "quality": "ultra",
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 47.6541,
+      "spreadMinMs": 47.2506,
+      "spreadMaxMs": 47.9248,
+      "runMediansMs": [
+        47.9248,
+        47.7492,
+        47.6541,
+        47.2506,
+        47.4104,
+        47.4127,
+        47.746
+      ],
+      "outW": 1024,
+      "outH": 1024
+    },
+    {
+      "group": "C",
+      "engine": "wasm-final-png",
+      "size": 2048,
+      "maxSide": 0,
+      "quality": "ultra",
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 177.2735,
+      "spreadMinMs": 176.4576,
+      "spreadMaxMs": 178.5714,
+      "runMediansMs": [
+        177.684,
+        177.8541,
+        178.5714,
+        177.1074,
+        177.2735,
+        176.4576,
+        176.5916
+      ],
+      "outW": 2048,
+      "outH": 2048
+    },
+    {
+      "group": "C",
+      "engine": "wasm-final-png",
+      "size": 4096,
+      "maxSide": 0,
+      "quality": "ultra",
+      "iterationsPerRun": 5,
+      "runs": 7,
+      "medianMs": 671.2782,
+      "spreadMinMs": 668.6968,
+      "spreadMaxMs": 678.72,
+      "runMediansMs": [
+        678.72,
+        672.4714,
+        671.2782,
+        668.6968,
+        672.0711,
+        670.0773,
+        669.8203
+      ],
+      "outW": 4096,
+      "outH": 4096
+    },
+    {
+      "group": "D",
+      "engine": "wasm-identity",
+      "size": 2048,
+      "maxSide": 0,
+      "quality": null,
+      "iterationsPerRun": 20,
+      "runs": 7,
+      "medianMs": 0.002,
+      "spreadMinMs": 0.0018,
+      "spreadMaxMs": 0.002,
+      "runMediansMs": [
+        0.0018,
+        0.002,
+        0.002,
+        0.002,
+        0.0018,
+        0.002,
+        0.002
+      ],
+      "outW": 2048,
+      "outH": 2048
+    }
+  ],
+  "derived": {
+    "groupA": [
+      {
+        "size": 512,
+        "tsNaiveOverWasm": {
+          "ratioOfMedians": 2.922,
+          "spreadMin": 2.886,
+          "spreadMax": 3.174,
+          "perRunRatios": [
+            2.97,
+            2.933,
+            2.915,
+            2.903,
+            3.174,
+            2.962,
+            2.886
+          ]
+        },
+        "tsOptimizedOverWasm": {
+          "ratioOfMedians": 0.902,
+          "spreadMin": 0.803,
+          "spreadMax": 1.092,
+          "perRunRatios": [
+            1.046,
+            0.866,
+            0.997,
+            0.906,
+            1.092,
+            0.902,
+            0.803
+          ]
+        },
+        "tsOptimizedVsWasmSpreadOverlap": true
+      },
+      {
+        "size": 1024,
+        "tsNaiveOverWasm": {
+          "ratioOfMedians": 4.121,
+          "spreadMin": 4.082,
+          "spreadMax": 4.228,
+          "perRunRatios": [
+            4.114,
+            4.144,
+            4.092,
+            4.082,
+            4.085,
+            4.092,
+            4.228
+          ]
+        },
+        "tsOptimizedOverWasm": {
+          "ratioOfMedians": 1.035,
+          "spreadMin": 0.901,
+          "spreadMax": 1.221,
+          "perRunRatios": [
+            1.221,
+            1.037,
+            1.028,
+            0.901,
+            0.965,
+            1.047,
+            1.178
+          ]
+        },
+        "tsOptimizedVsWasmSpreadOverlap": true
+      },
+      {
+        "size": 2048,
+        "tsNaiveOverWasm": {
+          "ratioOfMedians": 3.535,
+          "spreadMin": 3.513,
+          "spreadMax": 3.606,
+          "perRunRatios": [
+            3.53,
+            3.606,
+            3.513,
+            3.547,
+            3.52,
+            3.575,
+            3.549
+          ]
+        },
+        "tsOptimizedOverWasm": {
+          "ratioOfMedians": 1.042,
+          "spreadMin": 0.903,
+          "spreadMax": 1.149,
+          "perRunRatios": [
+            1.062,
+            0.961,
+            1.037,
+            0.903,
+            0.946,
+            1.113,
+            1.149
+          ]
+        },
+        "tsOptimizedVsWasmSpreadOverlap": true
+      },
+      {
+        "size": 4096,
+        "tsNaiveOverWasm": {
+          "ratioOfMedians": 3.667,
+          "spreadMin": 3.635,
+          "spreadMax": 3.69,
+          "perRunRatios": [
+            3.663,
+            3.68,
+            3.646,
+            3.673,
+            3.65,
+            3.69,
+            3.635
+          ]
+        },
+        "tsOptimizedOverWasm": {
+          "ratioOfMedians": 1.015,
+          "spreadMin": 0.903,
+          "spreadMax": 1.171,
+          "perRunRatios": [
+            0.948,
+            0.903,
+            1.171,
+            1.014,
+            0.912,
+            1.113,
+            1.126
+          ]
+        },
+        "tsOptimizedVsWasmSpreadOverlap": true
+      }
+    ],
+    "groupB": [
+      {
+        "source": 2048,
+        "maxSide": 1024,
+        "tsNaive": {
+          "medianMs": 51.691,
+          "spreadMinMs": 49.9598,
+          "spreadMaxMs": 54.607
+        },
+        "tsOptimized": {
+          "medianMs": 14.0674,
+          "spreadMinMs": 11.5163,
+          "spreadMaxMs": 15.061
+        },
+        "wasmDraftWarm": {
+          "medianMs": 12.9073,
+          "spreadMinMs": 12.7912,
+          "spreadMaxMs": 13.101
+        },
+        "wasmDraftCold": {
+          "medianMs": 64.1532,
+          "spreadMinMs": 63.6782,
+          "spreadMaxMs": 64.4626
+        },
+        "wasmUltra": {
+          "medianMs": 44.1872,
+          "spreadMinMs": 43.7855,
+          "spreadMaxMs": 44.479
+        }
+      },
+      {
+        "source": 4096,
+        "maxSide": 1024,
+        "tsNaive": {
+          "medianMs": 61.5533,
+          "spreadMinMs": 59.1011,
+          "spreadMaxMs": 62.3635
+        },
+        "tsOptimized": {
+          "medianMs": 21.8748,
+          "spreadMinMs": 17.0994,
+          "spreadMaxMs": 24.7346
+        },
+        "wasmDraftWarm": {
+          "medianMs": 12.8434,
+          "spreadMinMs": 12.7272,
+          "spreadMaxMs": 13.0064
+        },
+        "wasmDraftCold": {
+          "medianMs": 194.396,
+          "spreadMinMs": 193.9444,
+          "spreadMaxMs": 197.252
+        },
+        "wasmUltra": {
+          "medianMs": 43.8646,
+          "spreadMinMs": 43.4375,
+          "spreadMaxMs": 44.945
+        }
+      }
+    ],
+    "groupC": [
+      {
+        "size": 1024,
+        "wasmFinalPng": {
+          "medianMs": 47.6541,
+          "spreadMinMs": 47.2506,
+          "spreadMaxMs": 47.9248
+        }
+      },
+      {
+        "size": 2048,
+        "wasmFinalPng": {
+          "medianMs": 177.2735,
+          "spreadMinMs": 176.4576,
+          "spreadMaxMs": 178.5714
+        }
+      },
+      {
+        "size": 4096,
+        "wasmFinalPng": {
+          "medianMs": 671.2782,
+          "spreadMinMs": 668.6968,
+          "spreadMaxMs": 678.72
+        }
+      }
+    ],
+    "groupD": {
+      "identityCheck2048": {
+        "medianMs": 0.002,
+        "spreadMinMs": 0.0018,
+        "spreadMaxMs": 0.002
+      }
+    }
+  },
+  "scalarWasm": {
+    "note": "Identical harness, simd128 disabled: same engine crate rebuilt with wasm-pack --release without -C target-feature=+simd128 (RUSTFLAGS env override; committed .cargo/config.toml untouched). Both builds timed in ONE plain-node process with the Group A wasm-draft methodology (render_preview draft at maxSide = source side, 2 warmups, 5 iterations, median), alternating simd/scalar — 3 runs, median of run-medians. simdSpeedupPct = (scalar - simd) / scalar * 100; negative means the scalar build was faster. canonicalSimdMedianMs is the 7-run vitest canonical for context (vitest adds ~2-3% over plain node).",
+    "probedAt": "2026-06-10T22:40:52.376Z",
+    "scalarWasmSizeBytes": 560423,
+    "scalarWasmSha256": "365537816a146c2e34a81922cb94a03ebb1c503302383595f690f20cf28662be",
+    "shippedWasmSizeBytes": 572837,
+    "shippedWasmSha256": "b30c4e2cc19b11914533077c62963b6ddbe3136c979a5497fbeb1b2d98ff73c6",
+    "warmup": 2,
+    "iterations": 5,
+    "runs": 3,
+    "sizes": [
+      {
+        "size": 512,
+        "scalar": {
+          "medianMs": 3.1226,
+          "spreadMinMs": 3.1105,
+          "spreadMaxMs": 3.1463,
+          "runMediansMs": [
+            3.1226,
+            3.1105,
+            3.1463
+          ]
+        },
+        "simdSameProcess": {
+          "medianMs": 3.1292,
+          "spreadMinMs": 3.1163,
+          "spreadMaxMs": 3.1394,
+          "runMediansMs": [
+            3.1394,
+            3.1163,
+            3.1292
+          ]
+        },
+        "canonicalSimdMedianMs": 3.2588,
+        "scalarOverSimdRatio": 0.998,
+        "simdSpeedupPct": -0.211
+      },
+      {
+        "size": 1024,
+        "scalar": {
+          "medianMs": 12.444,
+          "spreadMinMs": 12.3321,
+          "spreadMaxMs": 12.5213,
+          "runMediansMs": [
+            12.5213,
+            12.444,
+            12.3321
+          ]
+        },
+        "simdSameProcess": {
+          "medianMs": 12.474,
+          "spreadMinMs": 12.4198,
+          "spreadMaxMs": 12.6254,
+          "runMediansMs": [
+            12.6254,
+            12.474,
+            12.4198
+          ]
+        },
+        "canonicalSimdMedianMs": 12.9272,
+        "scalarOverSimdRatio": 0.998,
+        "simdSpeedupPct": -0.241
+      },
+      {
+        "size": 2048,
+        "scalar": {
+          "medianMs": 48.3965,
+          "spreadMinMs": 48.3913,
+          "spreadMaxMs": 48.4843,
+          "runMediansMs": [
+            48.3965,
+            48.3913,
+            48.4843
+          ]
+        },
+        "simdSameProcess": {
+          "medianMs": 49.1974,
+          "spreadMinMs": 49.0628,
+          "spreadMaxMs": 49.2063,
+          "runMediansMs": [
+            49.1974,
+            49.0628,
+            49.2063
+          ]
+        },
+        "canonicalSimdMedianMs": 51.0104,
+        "scalarOverSimdRatio": 0.984,
+        "simdSpeedupPct": -1.655
+      },
+      {
+        "size": 4096,
+        "scalar": {
+          "medianMs": 185.7243,
+          "spreadMinMs": 185.2054,
+          "spreadMaxMs": 186.0043,
+          "runMediansMs": [
+            185.2054,
+            185.7243,
+            186.0043
+          ]
+        },
+        "simdSameProcess": {
+          "medianMs": 189.7108,
+          "spreadMinMs": 188.8918,
+          "spreadMaxMs": 190.2453,
+          "runMediansMs": [
+            188.8918,
+            190.2453,
+            189.7108
+          ]
+        },
+        "canonicalSimdMedianMs": 196.5938,
+        "scalarOverSimdRatio": 0.979,
+        "simdSpeedupPct": -2.146
+      }
+    ]
+  },
+  "parityNote": "Output parity data (ts vs wasm, convention analysis) is identical across runs; see results/js-wasm.json under parity."
+}
